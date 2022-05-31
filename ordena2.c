@@ -26,7 +26,7 @@ int main(int argc, char**argv)
 	Endereco *e;
 	long posicao, qtd, metade;
 
-	f = fopen("cep.dat","rb");
+	f = fopen("cep_RJ.dat","rb");
 	fseek(f,0,SEEK_END);
 	posicao = ftell(f);
 	qtd = posicao/sizeof(Endereco);
@@ -39,7 +39,7 @@ int main(int argc, char**argv)
 	}
 	qsort(e,metade,sizeof(Endereco),compara);
 	printf("Ordenado = OK\n");
-	saida = fopen("cep_a.dat","wb");
+	saida = fopen("cep_RJ_ordenado.dat","wb");
 	fwrite(e,sizeof(Endereco),metade,saida);
 	fclose(saida);
 	printf("Escrito = OK\n");
