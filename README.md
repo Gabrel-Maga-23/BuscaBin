@@ -10,7 +10,7 @@ meu cep de teresópolis, 25961070, e para executar o comando digite no terminal:
 
 ou
 
-./buscabin *cep de sua escolha*
+./buscabin *cep de sua escolha* <-- apenas ceps do rio nesse git devido a limitações a tamanho de arquivo
 
 e você tera o retorno do local correspondente ao cep
 
